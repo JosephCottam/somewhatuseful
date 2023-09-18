@@ -5,6 +5,7 @@ tags:
   - algorithms
   - visualization
 teaser: Part of the answer to what does graphviz's "dot" algorithm actually do?
+date: 2023-08-21
 title: Layered Networks and Edge Crossing
 ---
 
