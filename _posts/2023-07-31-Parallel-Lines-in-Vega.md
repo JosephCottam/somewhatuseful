@@ -1,10 +1,7 @@
 ---
 layout: post
 title: "Parallel Lines in Vega"
-tags:
-  - vega
-  - visualization
-teaser: Make parallel lines from a single set of endpoints using Vega transforms.
+date: 2023-07-31 00:00:00 -0700
 ---
 
 I was working on multi-graph visualizations and I wanted to place multiple edges between two nodes.  This led me down a rabbit hole that included the `atan2` function and a few hours fighting special cases. 
