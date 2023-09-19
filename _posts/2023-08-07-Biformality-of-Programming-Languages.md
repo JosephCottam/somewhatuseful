@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Biformality of Programming Languages"
-date: 2023-08-07 00:00:00 -0700
+date: 2023-08-07
+tags: 
+  - programming
+  - types
+teaser: Type and data-level programs need the same low-level concepts. Why do they look different?
 ---
 
 I came a cross an [interesting critique on static-vs-dynamic types](https://hirrolot.github.io/posts/why-static-languages-suffer-from-complexity.html) that took an angle that illustrated something I've never thought of before.  
