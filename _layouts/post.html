@@ -35,5 +35,11 @@ layout: base
   {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  {%- if content contains 'mermaid' -%}
+  {% include mermaid.html %}
+  {% endif %}
+
+
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
