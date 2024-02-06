@@ -3,7 +3,7 @@ source: https://ourworldindata.org/much-better-awful-can-be-better
 teaser: The world is both bad and better, and that is a good thing.
 date: 2024-02-06
 ---
-![](../assets/images/awful_better.webp)
+![](assets/images/awful_better.webp)
 
 [The world is awful. The world is much better. The world can be much better.](https://ourworldindata.org/much-better-awful-can-be-better) is a concise post on how all three statements can be true at once.   I like the post shows a feeling of progress (the world is better), discontent (the world is awful) and hope for the future (the world can be much better) **all at once**!!  Their context is child-mortality.  
 
