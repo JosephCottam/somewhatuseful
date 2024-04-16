@@ -1,7 +1,7 @@
 ---
+title: Edit Distance in Python
 teaser: A notion of edit distance using the standard library
 layout: post
-title: Edit Distance in Python
 ---
 I've occasionally needed to compare strings to get an idea of how similar they are.  Python has several libraries ([editdistance](https://pypi.org/project/editdistance/), [edit-distance](https://pypi.org/project/edit-distance/), [python-Levenshtein](https://pypi.org/project/python-Levenshtein/)...probably more) that do this, but sometimes I get a sense of "yet another install....*sigh*".  
 

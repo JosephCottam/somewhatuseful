@@ -1,9 +1,9 @@
 ---
+title: Don't Abstract Vega Names
+teaser: Systems express opinions on what they make easy & hard.  Vega makes it hard to abstract over names.  This isn't necessarily bad, but keep it mind when you make your schemas.
 tags:
   - visualization
   - vega
-title: Don't Abstract Vega Names
-teaser: Systems express opinions on what they make easy & hard.  Vega makes it hard to abstract over names.  This isn't necessarily bad, but keep it mind when you make your schemas.
 ---
 #TODO: Get the reference for 'use opinionated tools'
 

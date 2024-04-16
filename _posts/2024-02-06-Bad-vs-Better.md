@@ -1,6 +1,7 @@
 ---
-source: https://ourworldindata.org/much-better-awful-can-be-better
+title: '"Bad vs Better" is a False Dichotomy'
 teaser: The world is both bad and better, and that is a good thing.
+source: https://ourworldindata.org/much-better-awful-can-be-better
 date: 2024-02-06
 ---
 ![](/somewhatuseful/assets/images/awful_better.webp)

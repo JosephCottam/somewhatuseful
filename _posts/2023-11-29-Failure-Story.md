@@ -1,9 +1,9 @@
 ---
+title: Failure is a Necessary Option
 source: https://www.chrislewicki.com/articles/failurestory
 layout: post
 teaser: Failure helps you grow.
 date: 2023-11-29
-title: Failure is a Necessary Option
 tags:
   - growth
 ---
