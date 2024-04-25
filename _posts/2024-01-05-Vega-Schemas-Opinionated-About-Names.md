@@ -15,8 +15,10 @@ I was recently working on a graph-based schema and tried to abstract away the na
 
 I should not have been surprised by this, though...there are a LOT of fixed names in vega itself.  `fx` and `fy` have special meaning in the [force transform](https://vega.github.io/vega/docs/transforms/force/).  `id` is integral to the way the tables work.  `path` always written by [linkpath](https://vega.github.io/vega/docs/transforms/linkpath/)[^caveat]
 
-[^caveat]: To be fair, not all names are the subject of such strong opinions.  For example, linkpath lets you set the field name to pull source & target from.  However, sometimes vega asserts its opinions strongly and there is no way to change them!
-
 This means when I work in vega, names are [opinionated](https://www.imkylelambert.com/articles/opinionated-software)[^opinion]. Cool, now I know.  I will now try to do some abstraction at the *presentation* level rather than the *data* level...
+
+----
+
+[^caveat]: To be fair, not all names are the subject of such strong opinions.  For example, linkpath lets you set the field name to pull source & target from.  However, sometimes vega asserts its opinions strongly and there is no way to change them!
 
 [^opinion]: The part I keyed off of in the linked article is "Direction over Choice".  Vega gives choice in a lot of areas, but in other cases it gives direction.  You are directed in how to handle names.  You can choose how you get colors.

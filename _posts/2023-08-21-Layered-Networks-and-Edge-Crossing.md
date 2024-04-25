@@ -88,8 +88,6 @@ Two additional heuristics are used to further improve the layout:
 1. Trying different orderings of "tied" elements (step #4 above).  This explores targeted alternatives.
 2. The algorithm goes both "up" and "down" through the hierarchy.  In a single-directional pass, the "parent" level influences the "child" level placement but not vice-versa.  Flipping it around allows the reverse to occur BUT requires some termination condition because it is possible to have a graph that flips between different layouts on subsequent passes.  The solution used is to record prior configurations and stop if a prior-observed configuration appears again OR after a pre-set number of passes.
 
-[^1]: For completeness, the authors also considered computing barycenters based on both the next-level-up and the next-level-down.  This did NOT improve layouts (and sometimes did worse than the up/down method).  The theory was that when considering only one direction at a time, it is using already-optimized node ordering, but when looking at both directions one side is less optimized than the other.
-
 ## Some questions
 
 The source paper concerns itself with *practical* solutions...and computing has advanced somewhat since 1981.  My big question is "how big is too big" for the penalty minimization method on modern hardware?  The paper indicates this algorithm has stronger guarantees than the barycentric heuristic, but was not practical for their applications *in 1981*.  Does it better results?  What is the graph size cut-off?
@@ -102,4 +100,6 @@ Understanding how GraphViz places nodes in layered-graphs has helped me debug wh
 
 Barycentric node placement is one of several things discussed in the paper. (Perhaps more on others later.)
 
+----
 
+[^1]: For completeness, the authors also considered computing barycenters based on both the next-level-up and the next-level-down.  This did NOT improve layouts (and sometimes did worse than the up/down method).  The theory was that when considering only one direction at a time, it is using already-optimized node ordering, but when looking at both directions one side is less optimized than the other.
