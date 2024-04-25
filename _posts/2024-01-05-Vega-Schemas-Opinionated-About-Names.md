@@ -5,8 +5,6 @@ tags:
   - visualization
   - vega
 ---
-#TODO: Get the reference for 'use opinionated tools'
-
 [Vega](https://vega.github.io/vega/) provides a way to construct visualizations from a JSON schema.  I am often tempted to re-use schemas between projects, which leads to trying to make some generalized schemas that I can use in many different cases.[^vegalite]  
 
 I was recently working on a graph-based schema and tried to abstract away the name of the attribute used in labels.  This proved to be difficult because of a few features of vega: (1) There is no way to get a field-name from a signal  and (2) expressions are just strings.  The two combined make it difficult to create a schema that abstracts out the names of fields.
