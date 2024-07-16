@@ -1,6 +1,6 @@
 ---
 source: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
-title: The Bitter Lesson
+title: The Bitter Lesson (and the Better Lesson)
 layout: post
 date: 2024-04-25
 teaser: The "bitter lesson" is that complexity is ultimately limiting.
