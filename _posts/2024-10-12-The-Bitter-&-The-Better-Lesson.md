@@ -1,6 +1,6 @@
 ---
 source: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
-title: The Bitter Lesson (and the Better Lesson)
+title: The Bitter Lesson
 layout: post
 date: 2024-04-25
 teaser: The "bitter lesson" is that complexity is ultimately limiting.
@@ -9,7 +9,7 @@ source2: https://rodneybrooks.com/a-better-lesson/
 > "...general methods that leverage computation are ultimately the most effective, and by a large margin."
 > --Rich Sutton (March 13, 2019)
 
-[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) is a  short essay by Rich Sutton.  It's worth a read, but  I'll summarize the last two paragraphs here:
+[The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) is a short essay by Rich Sutton.  It's worth a read, but  I'll summarize the last two paragraphs here:
 - Observation S1: Attempts to inject "knowledge" leads to early advances but rapid plateaus while search and learning compound.
 - Observation S2: There are two things that scale easily with computation that drive AI broadly: Search and Learning.   
 - Implication S1: General-purpose methods (like search & learning) that scale with computation are the most valuable 
