@@ -11,14 +11,15 @@ For example, I have a tool that lets me edit JSON files using python lists and d
 Pretending my tool is called `json_tool` and pretending that its git repo url is `ssh://git@fancyserver.org:somewhatuseful/json_tool.git`...
 
 The repo structure follows the current practice of a `pyproject.toml` file and the package source files in a directory with the same name as the project (`json_tool` today).
-	```
-	root
-	├─ json_tool
-	|  ├─ __init__.py
-	|  ├─ find.py 
-	|  └─ edit.py
-	└─ pyproject.toml
-	```
+```
+root
+├─ json_tool
+|  ├─ __init__.py
+|  ├─ find.py 
+|  └─ edit.py
+└─ pyproject.toml
+```
+
 The package source directory (and all other directories under it...if they existed) has an `__init__.py` to indicate they are [regular packages](https://docs.python.org/3/reference/import.html#regular-packages) (I did not test with namespace packages).
 
 To install, `pip install git+<normal-repo-checkout-url>`.  If the package name (specified as `name=<package-name>` in `pyproject.toml`) does not match repository name, you *might* use  at the end of the URL used in `pip install git+<URL>#egg=<package-name>` for the install. (This fragment fixed a problem...that I couldn't reproduce using the fragment-free URL after it was fixed once.)
