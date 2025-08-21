@@ -18,4 +18,4 @@ The process of sharing-and-possibly-imparting some aesthetic qualities to things
 
 [^caveat]: Sometimes moves are just picked because they are part of the vernacular.  Sometimes moves are picked so people can just do something (anything) on their own and feel good about it.   These are important things too, but they are usually only the focus in early classes.  I've been to many tuck-turn-based classes (rooted in vernacular) that were tweaked to focus on a specific movement quality...sometimes in contradictory ways!  
 
-[^patience]: I have a hard time seeing the forest for the trees sometimes.  I'm sure more than one person shared this with me through the years.  Please be patient with me....I swear I'm deliberately obtuse.
+[^patience]: I have a hard time seeing the forest for the trees sometimes.  I'm sure more than one person shared this with me through the years.  Please be patient with me....I swear I'm not deliberately obtuse.

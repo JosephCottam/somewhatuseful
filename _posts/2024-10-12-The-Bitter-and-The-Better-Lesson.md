@@ -1,10 +1,11 @@
 ---
-source: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+source:
+  - http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+  - https://rodneybrooks.com/a-better-lesson/
 title: Reflections on the Bitter (and the Better) Lesson
 layout: post
 date: 2024-10-12
 teaser: The "bitter lesson" is that _complexity_ is ultimately the limiting factor.
-source2: https://rodneybrooks.com/a-better-lesson/
 ---
 > "...general methods that leverage computation are ultimately the most effective, and by a large margin."
 > --Rich Sutton (March 13, 2019)
