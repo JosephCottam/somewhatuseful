@@ -21,9 +21,9 @@ I had transfer a [Neo4j](https://neo4j.com/) database to another team. They alre
 For context, here are the database stats:
 - 2M nodes 
 - 6M relationship
-- >3K distinct node labels
-- >10k distinct node label combinations 
-- >600 distinct edge types
+- \>3K distinct node labels
+- \>10k distinct node label combinations 
+- \>600 distinct edge types
 
 ## Binary export
 
