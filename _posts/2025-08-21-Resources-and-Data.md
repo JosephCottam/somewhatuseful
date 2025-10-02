@@ -8,7 +8,7 @@ date: 2025-08-21
 layout: post
 teaser: The type system only hints at some important information
 ---
-[without.boats revisited ideas about a "smaller rust"](https://without.boats/blog/revisiting-a-smaller-rust/).  The section on Resource types vs. Data types was very instructive.  The core distinction is that data can be copied while resources are shared.  This distinction is *lost* programming languages (Rust included) because the language uses a metaphor of RAM (which is a resource). 
+[Without Boats](https://without.boats/) revisited ideas about a ["smaller rust"](https://without.boats/blog/revisiting-a-smaller-rust/).  The section on Resource types vs. Data types was very instructive.  The core distinction is that data can be copied while resources are shared.  This distinction is *lost* programming languages (Rust included) because the language uses a metaphor of RAM (which is a resource). 
 
 However, when you try to interpret different parts of memory it breaks into two major categories:
 - **Data**: Immutable, meaning is derived entirely from context, separate copies are indistinguishable and interchangeable.
