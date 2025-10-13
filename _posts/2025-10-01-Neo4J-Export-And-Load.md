@@ -7,7 +7,7 @@ date: 2025-10-01
 layout: post
 teaser: Neo4j has opinion about how data is handled...
 ---
-I had transfer a [Neo4j](https://neo4j.com/) database to another team. They already had a database so I wanted to provide flexibility in how they imported and merged it.  Below are notes on options explored.
+I had transfer a [Neo4j](https://neo4j.com/) database to another team. They already had a database so I wanted to provide flexibility in how they imported and merged it.  Below are notes on options explored. Ultimately, none were obviously better than the others for all cases.
 
 | Method             | td/dr                                                                                             |
 | ------------------ | ------------------------------------------------------------------------------------------------- |
@@ -65,6 +65,7 @@ MATCH (n) REMOVE n.__csv_id;
 
 **Cons:**
 - The processing before input can be extensive.  I have not included my script here because it is tailored to my specific dataset.
+- There are issues around list-typed and empty-valued fields.  It can take some non-trivial work to get an identical import after export+pre-processing.
 
 **Conclusion:** The post-processing has not been hard.  This is a flexible option if you are comfortable making it.
 
@@ -106,6 +107,7 @@ CALL apoc.import.json("file:/database.json");
 match (n) CALL apoc.create.addLabels(n, n.labels) YIELD node FINISH;
 match (n) REMOVE n.labels;
 match (n) REMOVE n:_IS_NODE;
+MATCH (n) REMOVE n.neo4jImportId;
 DROP CONSTRAINT is_node_unique IF EXISTS;
 ```
 
@@ -119,7 +121,7 @@ DROP CONSTRAINT is_node_unique IF EXISTS;
 - Slowest import of all methods checked (5x slower than the CSV).  This is likely because it builds an index as it imports.
 - The multi-step dance is easy to make a mistake during.  If you delete the labels property before successfully creating the node labels, it can cost a lot of time.
 
-**Conclusion:** Its an OK process.  If there are only a few node labels, creating uniqueness constrains for each is preferable to the technique I used.
+**Conclusion:** Its an OK process.  If there are only a few node labels, creating uniqueness constrains for each is preferable to the technique used here.
 
 ## Other notes:
 - Neo4j `apoc.import.csv` supports "[id spaces](https://neo4j.com/docs/operations-manual/current/import/#import-tool-id-spaces)".  The original database was built from multiple different sources providing different node types.  Id spaces made it easier to merge those sources together since we did not need to ensure the ids were disjoint between sources.
