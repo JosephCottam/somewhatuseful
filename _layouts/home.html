@@ -27,6 +27,7 @@ layout: base
         {% if page.in_listing == false %}
           <!-- skipping {{ post.title }} as unlisted-->
         {% else %}
+          <!-- Showing {{ post.title }} as listed-->
           <li>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>
