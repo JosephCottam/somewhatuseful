@@ -24,8 +24,9 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-        {% assign in_listing = post.in_listing | default: true %}
-        {% if in_listing %}
+        {% if page.in_listing == false %}
+          <!-- skipping {{ post.title }} as unlisted-->
+        {% else %}
           <li>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>
