@@ -24,7 +24,7 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-        {% if post.in_listing == false %}
+        {% if post.in_listing == 'false' %}
           <!-- skipping {{ post.title }} as unlisted-->
         {% else %}
           <!-- Showing {{ post.title }} as listed-->
