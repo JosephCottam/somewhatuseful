@@ -1,6 +1,8 @@
 ---
 title: Git Repos for Pip install
 teaser: Personal packages are useful
+layout: post
+date: 2024-10-02
 ---
 I use a small collection of python utilities I developed across several projects. Today, I started an experiment sharing those utilities between projects using pip to install a utilities package from a git repo.
 
